@@ -15,10 +15,21 @@ spec:
 ```
 
 For others:
-- `Service` focuses on `selector` and `port`.
+- `Service` focuses on `selector` and `ports`.
+- `Deployment` emphasizes on `replicas`, `selector`, and `template`.
+- `Job` 
+
+
 Start from `Service`
 ```yaml
 spec:
+  selector:
+    <key>: <value>
+  ports:
+    - protocol: <protocol>
+      port: <service-port>
+      targetPort: <container-port>
+  type: <service-type>
   
 ```
 
