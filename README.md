@@ -14,6 +14,8 @@ spec:
   # source specific fields
 ```
 
+For others:
+- `Service` focuses on `selector` and `port`.
 Start from `Service`
 ```yaml
 spec:
